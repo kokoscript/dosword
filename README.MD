@@ -10,7 +10,7 @@ Can also run under Windows 3.x and 9x!
 
 ## Building
 
-You'll need either DJGPP on DOS, or a cross-compiler. I recommend the latter, specifically version 9.3.0 from [here](https://github.com/andrewwutw/build-djgpp/releases/tag/v3.0).
+You'll need either DJGPP on DOS, or a cross-compiler. I recommend the latter, specifically version GCC 9.3.0 from [here](https://github.com/andrewwutw/build-djgpp/releases/tag/v3.0).
 
 You'll also need Allegro 4.2.3, which you can get complete with DJGPP [here](https://www.mrdictionary.net/allegro/).
 
