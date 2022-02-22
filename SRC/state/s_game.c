@@ -51,28 +51,28 @@ int check_in_dict() {
 	int mid, cmp;
 
 	while (start <= end) {
-        mid = (start + end) / 2;
-        cmp = strcmp(tile_chars[num_guesses], game_dict[mid]);
-        if (cmp == 0)
-            return 1;
-        else if (cmp < 0)
-            end = mid - 1;
-        else
-            start = mid + 1;
-    }
-    return 0;
+		mid = (start + end) / 2;
+		cmp = strcmp(tile_chars[num_guesses], game_dict[mid]);
+		if (cmp == 0)
+			return 1;
+		else if (cmp < 0)
+			end = mid - 1;
+		else
+			start = mid + 1;
+	}
+	return 0;
 }
 
 // returns 1 if word is in the answer list, 0 if not
 int check_in_answers() {
 	// unfortunately can't do binary search here, though a seperate sorted answer list could work...
 	int i;
-    for (i = 0; i < ANSWER_LEN; i++) {
-    	if (strcmp(tile_chars[num_guesses], answers[i]) == 0) {
-    		return 1;
-    	}
-    }
-    return 0;
+	for (i = 0; i < ANSWER_LEN; i++) {
+		if (strcmp(tile_chars[num_guesses], answers[i]) == 0) {
+			return 1;
+		}
+	}
+	return 0;
 }
 
 // returns 1 if the letter to check is in the answer, 0 if not
@@ -204,26 +204,26 @@ void do_game() {
 		}
 		switch (num_guesses) {
 			case 0:
-				textout_centre_ex(dblbuffer, font_main_small, str_game_end1, 160, 187, 15, -1);
-				break;
+			textout_centre_ex(dblbuffer, font_main_small, str_game_end1, 160, 187, 15, -1);
+			break;
 			case 1:
-				textout_centre_ex(dblbuffer, font_main_small, str_game_end2, 160, 187, 15, -1);
-				break;
+			textout_centre_ex(dblbuffer, font_main_small, str_game_end2, 160, 187, 15, -1);
+			break;
 			case 2:
-				textout_centre_ex(dblbuffer, font_main_small, str_game_end3, 160, 187, 15, -1);
-				break;
+			textout_centre_ex(dblbuffer, font_main_small, str_game_end3, 160, 187, 15, -1);
+			break;
 			case 3:
-				textout_centre_ex(dblbuffer, font_main_small, str_game_end4, 160, 187, 15, -1);
-				break;
+			textout_centre_ex(dblbuffer, font_main_small, str_game_end4, 160, 187, 15, -1);
+			break;
 			case 4:
-				textout_centre_ex(dblbuffer, font_main_small, str_game_end5, 160, 187, 15, -1);
-				break;
+			textout_centre_ex(dblbuffer, font_main_small, str_game_end5, 160, 187, 15, -1);
+			break;
 			case 5:
-				textout_centre_ex(dblbuffer, font_main_small, str_game_end6, 160, 187, 15, -1);
-				break;
+			textout_centre_ex(dblbuffer, font_main_small, str_game_end6, 160, 187, 15, -1);
+			break;
 			default:
-				textout_centre_ex(dblbuffer, font_main_small, str_game_end5, 160, 187, 15, -1);
-				break;
+			textout_centre_ex(dblbuffer, font_main_small, str_game_end5, 160, 187, 15, -1);
+			break;
 		}
 	} else if (end_state == -1) {
 		textout_centre_ex(dblbuffer, font_main_small, answer, 160, 187, 15, -1);
