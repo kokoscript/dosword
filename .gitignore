@@ -1,0 +1,11 @@
+.DS_Store
+.vscode
+*.EXE
+*.O
+*.exe
+*.o
+OBJS
+TOOLS
+SETUP.DAT
+PROFILE.DAT
+wow.bat
