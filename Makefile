@@ -15,6 +15,8 @@ ifeq ($(TARGET), DOS)
 CFLAGS += -DDOS_BUILD
 else ifeq ($(TARGET), DOS-DEBUG)
 CFLAGS += -g -DDOS_BUILD
+else ifeq ($(TARGET), DOS-NOFPU)
+CFLAGS += -g -DDOS_BUILD -lemu
 # by default, buid for DOS
 else
 CFLAGS += -DDOS_BUILD

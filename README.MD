@@ -20,7 +20,7 @@ Your cross-compiler should reside in TOOLS/djgpp, as well as Allegro's include a
 make TARGET=DOS
 ```
 
-Use `DOS-DEBUG` instead to produce an executable with support for debugging via `gdb`.
+Use `DOS-DEBUG` instead to produce an executable with support for debugging via `gdb`, or `DOS-NOFPU` to produce an executable that will run without an FPU.
 
 ## Acknowledgements
 
