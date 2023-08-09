@@ -2,7 +2,7 @@
 #define GAMESTRS_H
 
 static const char* str_init_couldNotInitialize = "\nCould not initialize %s. %s";
-static const char* str_init_contact = "Please contact me at @foxgirl_irl for help.\n";
+static const char* str_init_contact = "Please comment at kokoscript.itch.io/dosword for help.\n";
 static const char* str_init_allegro = "Allegro";
 static const char* str_init_keyboard = "keyboard";
 static const char* str_init_timerSystem = "timer system";
@@ -28,7 +28,7 @@ static const char* str_game_end4 = "Splendid";
 static const char* str_game_end5 = "Great";
 static const char* str_game_end6 = "Phew";
 static const char* str_game_cred1 = "Port by";
-static const char* str_game_cred2 = "@foxgirl_irl";
+static const char* str_game_cred2 = "kokoscript";
 static const char* str_game_cred3 = "Original by";
 static const char* str_game_cred4 = "@powerlanguish";
 
